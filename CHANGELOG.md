@@ -17,3 +17,5 @@
 - Teach memory and computer architecture with captured Windows x64
   assembly and layout, storage and drop order, first-fit allocation,
   cache traces, and checked virtual address ranges.
+- Teach ownership transfer, Copy, Clone, disjoint borrowing, lifetimes,
+  variance, and RAII with diagnostic fixtures and a tested permit pool.

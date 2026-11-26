@@ -390,6 +390,12 @@ def main() -> int:
                 "tests/fixtures/macro_called_as_function.rs": "E0423",
                 "tests/fixtures/reassign_immutable.rs": "E0384",
                 "tests/fixtures/wrong_tail_type.rs": "E0308",
+                "tests/fixtures/use_after_move.rs": "E0382",
+                "tests/fixtures/shared_and_exclusive.rs": "E0502",
+                "tests/fixtures/two_indexed_borrows.rs": "E0499",
+                "tests/fixtures/ambiguous_output_lifetime.rs": "E0106",
+                "tests/fixtures/return_local_reference.rs": "E0515",
+                "tests/fixtures/invariant_slot.rs": "E0597",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

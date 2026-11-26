@@ -185,4 +185,4 @@ constrain access, and residency affects service cost. Name
 the resource a limit protects and check the limit before
 committing the work.
 
-[Hierarchy, allocation, fragmentation, and locality](019-allocation-and-locality.md) · [Solutions](../memory-solutions.md#chapter-020)
+[Hierarchy, allocation, fragmentation, and locality](019-allocation-and-locality.md) · [Solutions](../memory-solutions.md#chapter-020) · [Ownership, moves, Copy, and Clone](../part-05/021-ownership-and-moves.md)

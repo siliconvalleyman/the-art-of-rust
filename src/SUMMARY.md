@@ -37,8 +37,17 @@
 - [019. Hierarchy, allocation, fragmentation, and locality](part-04/019-allocation-and-locality.md)
 - [020. Address spaces, pages, and resource limits](part-04/020-address-spaces-and-pages.md)
 
+# Part V — Ownership and Borrowing
+
+- [021. Ownership, moves, Copy, and Clone](part-05/021-ownership-and-moves.md)
+- [022. Shared and mutable borrowing](part-05/022-borrowing.md)
+- [023. Lifetimes, elision, and lifetime bounds](part-05/023-lifetimes.md)
+- [024. Variance, subtyping, and aliasing](part-05/024-variance-and-aliasing.md)
+- [025. RAII, Drop, and resource invariants](part-05/025-raii-and-drop.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
 [Rust fundamentals solutions](rust-fundamentals-solutions.md)
 [Memory and computer architecture solutions](memory-solutions.md)
+[Ownership and borrowing solutions](ownership-solutions.md)

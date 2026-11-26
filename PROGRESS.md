@@ -2,14 +2,14 @@
 
 ## Current checkpoint
 
-- Phase: Ownership and Borrowing begins at C021.
+- Phase: Data Modeling begins at C026.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C020 are COMPLETE. C021–C125 are NOT_STARTED.
-- Practice: 100 exercise/solution pairs, 40 interview
+- Chapters: C001–C025 are COMPLETE. C026–C125 are NOT_STARTED.
+- Practice: 125 exercise/solution pairs, 50 interview
   question/answer pairs, a scored Part II assessment, and the
-  Fundamentals midterm. The planned inventory has 525 exercises
-  and 210 interview questions remaining.
+  Fundamentals midterm. The planned inventory has 500 exercises
+  and 200 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -20,18 +20,20 @@
   termination and correctness of iterative and recursive scans.
   Part IV reviews covered field offsets and byte order, minimality
   of first-fit search, cache residency, and covered-page bounds.
+  Part V reviews covered ownership transfer, disjoint slice ranges,
+  lifetime relationships, slot invariance, and RAII permit accounting.
 - Projects: P01–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `58b8a4e` (Rust Fundamentals and the midterm).
+  `44d13e0` (Memory and Computer Architecture).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: write C021 on ownership, moves, Copy, Clone, and partial
-  moves. Start with a single-owner transfer trace and an E0382
-  compile-fail fixture, then compare a Copy value with an explicit
-  heap-owning clone and verify cleanup behavior.
+- Next action: start C026 on structs, product types, methods, and
+  associated functions. Derive a record from two independent fields,
+  compare named, tuple, and unit structs, and verify constructor and
+  receiver examples on Rust 1.75.0 before adding exercises and solutions.
 
 ## Validation evidence
 
@@ -40,9 +42,9 @@ Rust 1.75.0 on `x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python
 3.13. It ran rustfmt, Cargo check, Clippy with warnings denied,
 27 Rust integration tests, one Rust documentation test, the release
 build, and the mdBook build and test commands. The byte-adder
-differential check covered all 65,536 input pairs. The literal
-fixtures verified the intended `overflowing_literals`, `E0423`,
-`E0384`, and `E0308` diagnostics. The first-program test checked stdout,
+differential check covered all 65,536 input pairs. Ten compiler
+fixtures verified their intended diagnostic codes, including move,
+borrow, and lifetime errors. The first-program test checked stdout,
 stderr, and exit status. Direct rustc and a standalone Cargo build
 both produced `Hello, Rust!`.
 The generated book passed the internal link and anchor check.
@@ -63,4 +65,4 @@ terminology, traces, edge cases, resource limits, and navigation.
 GitHub Actions reported that its job could not start because the
 account is locked due to a billing issue. This blocks verification
 on the hosted Linux runner. Local validation remains passing.
-[First hosted workflow run](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45748943367).
+[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45756945894/job/139697681875).
