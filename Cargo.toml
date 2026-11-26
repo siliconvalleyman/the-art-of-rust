@@ -1,5 +1,6 @@
 [workspace]
 members = [
+    "data-structures",
     "examples/abstractions",
     "examples/data-modeling",
     "examples/first-program",

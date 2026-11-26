@@ -78,6 +78,11 @@
 - [045. Robust APIs and defensive recovery](part-09/045-bounded-recovery.md)
 - [Core Rust midterm](core-rust-midterm.md)
 
+# Part X — Data Structures
+
+- [046. Arrays, dynamic arrays, stacks, and queues](part-10/046-arrays-stacks-and-queues.md)
+- [047. Linked lists, doubly linked lists, rings, and deques](part-10/047-lists-rings-and-deques.md)
+
 # Engineering projects
 
 - [P01. Command-line calculator](projects/p01-calculator.md)
@@ -94,3 +99,4 @@
 [Type systems and abstraction solutions](abstraction-solutions.md)
 [Functional programming solutions](functional-solutions.md)
 [Error handling and reliability solutions](reliability-solutions.md)
+[Data structures solutions](data-structures-solutions.md)

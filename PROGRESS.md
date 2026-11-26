@@ -2,17 +2,17 @@
 
 ## Current checkpoint
 
-- Phase: Data Structures begins at C046. The first three engineering
+- Phase: Data Structures continues at C048. The first three engineering
   projects are implemented and published with verified behavior.
   Windows Application Control still blocks a full validation run.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C040 are COMPLETE. C041–C045 are TESTING pending
-  the full mdBook test gate. C046–C125 are NOT_STARTED.
-- Practice: 225 exercise/solution pairs, 90 interview question/answer
+- Chapters: C001–C040 are COMPLETE. C041–C047 are TESTING pending
+  the full mdBook test gate. C048–C125 are NOT_STARTED.
+- Practice: 235 exercise/solution pairs, 94 interview question/answer
   pairs, a scored Part II assessment, the Fundamentals midterm, and
-  the Core Rust midterm. The planned inventory has 400 exercises
-  and 160 interview questions remaining.
+  the Core Rust midterm. The planned inventory has 390 exercises
+  and 156 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -37,20 +37,24 @@
   Part IX reviews covered recoverable failures, invariant preservation,
   explicit conversion, source-chain lifetimes, panic scope, and
   bounded transactional updates with deterministic error precedence.
+  The first two Part X chapters reviewed geometric array growth,
+  overflow-free ring positions, ownership of rejected queue items,
+  chain re-linking, and logical traversal across two ring spans.
 - Projects: P01–P03 are implemented, with 13 passing integration
   tests and three passing guide examples. Their full workspace gate
   remains TESTING. P04–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `ab3aa16` (Error Handling and Reliability).
+  `5cd95ee` (first three engineering projects).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: implement and verify C046's array and dynamic array
-  comparison, amortized growth proof, stack, and fixed-capacity queue.
-  Resume the full workspace and mdBook test gates on a host that can
-  launch the pinned tools and generated test programs.
+- Next action: begin C048 with the `Eq`/`Hash` contract and a
+  collision fixture, then derive Bloom filter false-positive
+  probabilities and check an LRU eviction trace. Resume the full
+  workspace and mdBook test gates on a host that can launch the
+  pinned tools and generated test programs.
 
 ## Validation evidence
 
@@ -97,6 +101,15 @@ harness. Windows Application Control blocked Clippy and specific
 generated programs in the full Cargo and mdBook runs (OS error 4551).
 These launches remain unverified until a full run succeeds.
 
+For C046–C047, Cargo check, rustfmt, the documentation inventory,
+mdBook build, and rendered links passed. Six new Cargo integration
+tests passed in release mode. They included 8,748 queue histories,
+2,187 list histories, and a 25,000-value list drop test. All 11
+executable Rust blocks in the two chapters and their solutions passed
+in a separate harness. Targeted mdBook tests still encountered
+Windows Application Control blocks when launching some generated
+executables.
+
 The foundations examples use the standard library only. Assembly,
 cache, clock, scheduling, and address diagrams identify their model
 or target assumptions. The instruction words are derived from
@@ -106,4 +119,4 @@ terminology, traces, edge cases, resource limits, and navigation.
 GitHub Actions reported that its job could not start because the
 account is locked due to a billing issue. This blocks verification
 on the hosted Linux runner.
-[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45771354546/job/139744484715).
+[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45808140604/job/139868681170).

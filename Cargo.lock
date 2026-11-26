@@ -23,6 +23,10 @@ name = "data-modeling"
 version = "0.1.0"
 
 [[package]]
+name = "data-structures"
+version = "0.1.0"
+
+[[package]]
 name = "first-program"
 version = "0.1.0"
 

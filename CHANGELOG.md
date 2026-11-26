@@ -31,3 +31,5 @@
 - Implement and document the first three engineering projects, with
   checked calculator arithmetic, a replayable bounded guessing game,
   and exact metric conversions with an explicit rounding rule.
+- Derive amortized dynamic-array growth and verify array-backed
+  queues, vector-backed stacks, linked lists, and ring deques in Part X.

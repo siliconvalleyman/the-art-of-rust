@@ -92,4 +92,4 @@ Define a size limit, error precedence, and a publication point before
 writing a fallible update. Verify how the previous state survives each
 failure path. See [Rust 1.75.0 str::lines](https://doc.rust-lang.org/1.75.0/std/primitive.str.html#method.lines).
 
-[Panic boundaries](044-panic-boundaries.md) · [Core Rust midterm](../core-rust-midterm.md) · [Solutions](../reliability-solutions.md#chapter-045)
+[Panic boundaries](044-panic-boundaries.md) · [Core Rust midterm](../core-rust-midterm.md) · [Arrays, stacks, and queues](../part-10/046-arrays-stacks-and-queues.md) · [Solutions](../reliability-solutions.md#chapter-045)
