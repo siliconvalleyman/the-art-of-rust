@@ -82,6 +82,7 @@
 
 - [046. Arrays, dynamic arrays, stacks, and queues](part-10/046-arrays-stacks-and-queues.md)
 - [047. Linked lists, doubly linked lists, rings, and deques](part-10/047-lists-rings-and-deques.md)
+- [048. Hash tables, sets, Bloom filters, and LRU caches](part-10/048-hash-tables-and-caches.md)
 
 # Engineering projects
 

@@ -22,6 +22,7 @@
 - Rust Project. [catch_unwind](https://doc.rust-lang.org/1.75.0/std/panic/fn.catch_unwind.html#notes) and [str::lines](https://doc.rust-lang.org/1.75.0/std/primitive.str.html#method.lines), for panic boundaries and line framing.
 - Rust Project. [Vec::push](https://doc.rust-lang.org/1.75.0/std/vec/struct.Vec.html#method.push) and [VecDeque](https://doc.rust-lang.org/1.75.0/std/collections/struct.VecDeque.html), for growable sequences and double-ended queue operations.
 - Rust Project. [LinkedList::append](https://doc.rust-lang.org/1.75.0/std/collections/struct.LinkedList.html#method.append) and [VecDeque::as_slices](https://doc.rust-lang.org/1.75.0/std/collections/struct.VecDeque.html#method.as_slices), for chain transfer and ordered views of a wrapped sequence.
+- Rust Project. [Hash and Eq](https://doc.rust-lang.org/1.75.0/std/hash/trait.Hash.html#hash-and-eq), [HashMap](https://doc.rust-lang.org/1.75.0/std/collections/struct.HashMap.html), and [HashSet](https://doc.rust-lang.org/1.75.0/std/collections/struct.HashSet.html), for equality, collisions, and unordered lookups.
 - Cargo Project. [Profiles](https://doc.rust-lang.org/1.75.0/cargo/reference/profiles.html), for build settings, overflow checks, and the [panic strategy](https://doc.rust-lang.org/1.75.0/cargo/reference/profiles.html#panic).
 - mdBook Project. [mdBook 0.4.36](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36).
 - Rustup Project. [Toolchain overrides](https://rust-lang.github.io/rustup/overrides.html).
@@ -44,3 +45,7 @@
 
 - Tom Leighton and Marten van Dijk. [Mathematics for Computer Science](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/), MIT 6.042J course materials, Fall 2010, for logic, proof techniques, graphs, counting, and probability.
 - Euclid. [Elements, Book VII, Proposition 2](https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII2.html), for the greatest common measure by successive reduction.
+
+## Data structures
+
+- Burton H. Bloom. [Space/Time Trade-offs in Hash Coding with Allowable Errors](https://crystal.uta.edu/~mcguigan/cse6350/papers/Bloom.pdf), Communications of the ACM 13(7), 1970, pp. 422–426, for approximate membership and the space–error trade-off.

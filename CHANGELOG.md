@@ -33,3 +33,5 @@
   and exact metric conversions with an explicit rounding rule.
 - Derive amortized dynamic-array growth and verify array-backed
   queues, vector-backed stacks, linked lists, and ring deques in Part X.
+- Explain exact and approximate membership with hash collisions,
+  a bounded Bloom filter, and checked LRU eviction traces.

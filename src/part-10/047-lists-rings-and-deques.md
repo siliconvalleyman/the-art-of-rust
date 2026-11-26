@@ -132,4 +132,4 @@ single-element, and wrapped states. See the Rust 1.75.0 documentation
 for [LinkedList::append](https://doc.rust-lang.org/1.75.0/std/collections/struct.LinkedList.html#method.append)
 and [VecDeque::as_slices](https://doc.rust-lang.org/1.75.0/std/collections/struct.VecDeque.html#method.as_slices).
 
-[Arrays, stacks, and queues](046-arrays-stacks-and-queues.md) · [Solutions](../data-structures-solutions.md#chapter-047)
+[Arrays, stacks, and queues](046-arrays-stacks-and-queues.md) · [Hash tables and caches](048-hash-tables-and-caches.md) · [Solutions](../data-structures-solutions.md#chapter-047)

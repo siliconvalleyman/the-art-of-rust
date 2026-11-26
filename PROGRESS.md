@@ -2,17 +2,17 @@
 
 ## Current checkpoint
 
-- Phase: Data Structures continues at C048. The first three engineering
+- Phase: Data Structures continues at C049. The first three engineering
   projects are implemented and published with verified behavior.
   Windows Application Control still blocks a full validation run.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C040 are COMPLETE. C041–C047 are TESTING pending
-  the full mdBook test gate. C048–C125 are NOT_STARTED.
-- Practice: 235 exercise/solution pairs, 94 interview question/answer
+- Chapters: C001–C040 are COMPLETE. C041–C048 are TESTING pending
+  the full mdBook test gate. C049–C125 are NOT_STARTED.
+- Practice: 240 exercise/solution pairs, 96 interview question/answer
   pairs, a scored Part II assessment, the Fundamentals midterm, and
-  the Core Rust midterm. The planned inventory has 390 exercises
-  and 156 interview questions remaining.
+  the Core Rust midterm. The planned inventory has 385 exercises
+  and 154 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -37,24 +37,26 @@
   Part IX reviews covered recoverable failures, invariant preservation,
   explicit conversion, source-chain lifetimes, panic scope, and
   bounded transactional updates with deterministic error precedence.
-  The first two Part X chapters reviewed geometric array growth,
+  The first three Part X chapters reviewed geometric array growth,
   overflow-free ring positions, ownership of rejected queue items,
-  chain re-linking, and logical traversal across two ring spans.
+  chain re-linking, logical traversal across two ring spans, the
+  `Eq`/`Hash` contract, Bloom occupancy, and LRU eviction order.
 - Projects: P01–P03 are implemented, with 13 passing integration
   tests and three passing guide examples. Their full workspace gate
   remains TESTING. P04–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `5cd95ee` (first three engineering projects).
+  `c38cf85` (linear data structures and ring invariants).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: begin C048 with the `Eq`/`Hash` contract and a
-  collision fixture, then derive Bloom filter false-positive
-  probabilities and check an LRU eviction trace. Resume the full
-  workspace and mdBook test gates on a host that can launch the
-  pinned tools and generated test programs.
+- Next action: begin C049 with a unique-key binary-search tree and
+  an ordering invariant. Verify AVL rotations, then compare
+  red-black height bounds, B-tree and B+ tree redistribution,
+  and trie prefix traversal. Resume the full workspace and mdBook
+  test gates on a host that can launch the pinned tools and generated
+  test programs.
 
 ## Validation evidence
 
@@ -109,6 +111,15 @@ executable Rust blocks in the two chapters and their solutions passed
 in a separate harness. Targeted mdBook tests still encountered
 Windows Application Control blocks when launching some generated
 executables.
+
+For C048, the four new integration tests passed in the debug profile
+after Windows blocked the release test executable. They exercised
+deliberate hash collisions, all 4,096 two-position Bloom queries
+for a fixed occupied state, LRU promotion, and zero-capacity behavior.
+The three chapter examples and three solution examples passed with
+the 11 earlier Part X blocks in a single Rust test harness. Rustfmt,
+Cargo check, the documentation inventory, the mdBook build, and
+rendered links passed for the 48-chapter edition.
 
 The foundations examples use the standard library only. Assembly,
 cache, clock, scheduling, and address diagrams identify their model
