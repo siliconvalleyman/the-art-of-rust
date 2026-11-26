@@ -10,3 +10,5 @@
   assessment, and Rust checks against independent reference results.
 - Build the first Rust program with rustc and Cargo, and verify its
   exact stdout and a compiler diagnostic on the pinned toolchain.
+- Teach bindings, scope, block results, numeric conversions, explicit
+  overflow policies, and floating-point boundaries.

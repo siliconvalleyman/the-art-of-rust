@@ -6,6 +6,8 @@
 - Rust Release Team. [Announcing Rust 1.75.0](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0/), December 28, 2023.
 - Rust Project. [Rust 1.75.0 documentation index](https://doc.rust-lang.org/1.75.0/). For historical claims, prefer the pinned library, language, and Cargo documentation shipped with this toolchain.
 - Rust Project. [Rust source at the 1.75.0 tag](https://github.com/rust-lang/rust/tree/1.75.0). Source details describe that implementation.
+- Rust Project. [Numeric types](https://doc.rust-lang.org/reference/types/numeric.html), [operator expressions](https://doc.rust-lang.org/reference/expressions/operator-expr.html), and [block expressions](https://doc.rust-lang.org/reference/expressions/block-expr.html). The book checks its examples against the pinned compiler.
+- Cargo Project. [Profiles](https://doc.rust-lang.org/cargo/reference/profiles.html), for build settings and overflow checks.
 - mdBook Project. [mdBook 0.4.36](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36).
 - Rustup Project. [Toolchain overrides](https://rust-lang.github.io/rustup/overrides.html).
 

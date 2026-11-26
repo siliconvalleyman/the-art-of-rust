@@ -323,4 +323,4 @@ starts through the operating system and eventually runs
 `main`. Reading which step failed narrows the question
 you should investigate.
 
-[Asymptotic reasoning and cost models](../part-02/010-asymptotic-work.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-011)
+[Asymptotic reasoning and cost models](../part-02/010-asymptotic-work.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-011) · [Names, mutation, primitive types, and expressions](012-names-and-expressions.md)

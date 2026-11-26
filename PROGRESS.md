@@ -2,14 +2,14 @@
 
 ## Current checkpoint
 
-- Phase: Rust Fundamentals continues at C012.
+- Phase: Rust Fundamentals continues at C014.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C011 are COMPLETE. C012–C125 are NOT_STARTED.
-- Practice: 55 exercise/solution pairs, 22 interview
+- Chapters: C001–C013 are COMPLETE. C014–C125 are NOT_STARTED.
+- Practice: 65 exercise/solution pairs, 26 interview
   question/answer pairs, and a separate scored Part II
-  assessment. The planned inventory has 570 exercises
-  and 228 interview questions remaining.
+  assessment. The planned inventory has 560 exercises
+  and 224 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -20,12 +20,11 @@
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `e32b2ed` (Part II). Locate the commit carrying this record with
+  `b762796` (first Rust program). Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: write C012 on names, mutation, primitive types, and
-  block expressions. Use the first-program output test as a model
-  for validation and add checked fixtures for mutation or type errors.
+- Next action: validate C014 on tuple, array, and UTF-8 representations
+  and C015 on branches, loops, functions, and recursive checks.
 
 ## Validation evidence
 
@@ -35,8 +34,8 @@ Rust 1.75.0 on `x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python
 27 Rust integration tests, one Rust documentation test, the release
 build, and the mdBook build and test commands. The byte-adder
 differential check covered all 65,536 input pairs. The literal
-fixtures verified the intended `overflowing_literals` and
-`E0423` diagnostics. The first-program test checked stdout,
+fixtures verified the intended `overflowing_literals`, `E0423`,
+and `E0384` diagnostics. The first-program test checked stdout,
 stderr, and exit status. Direct rustc and a standalone Cargo build
 both produced `Hello, Rust!`.
 The generated book passed the internal link and anchor check.
