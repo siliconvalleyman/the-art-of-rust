@@ -399,6 +399,11 @@ def main() -> int:
                 "tests/fixtures/non_exhaustive_route.rs": "E0004",
                 "tests/fixtures/mixed_weight_units.rs": "E0308",
                 "tests/fixtures/ship_draft.rs": "E0599",
+                "tests/fixtures/generic_missing_debug.rs": "E0277",
+                "tests/fixtures/orphan_display.rs": "E0117",
+                "tests/fixtures/overlapping_summary.rs": "E0119",
+                "tests/fixtures/non_object_safe.rs": "E0038",
+                "tests/fixtures/overlapping_lent_windows.rs": "E0499",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

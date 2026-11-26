@@ -1,3 +1,9 @@
 [workspace]
-members = ["examples/data-modeling", "examples/first-program", "examples/foundations", "mathematics"]
+members = [
+    "examples/abstractions",
+    "examples/data-modeling",
+    "examples/first-program",
+    "examples/foundations",
+    "mathematics",
+]
 resolver = "2"

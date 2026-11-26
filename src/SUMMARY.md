@@ -53,6 +53,14 @@
 - [029. Newtypes and type-driven API design](part-06/029-newtypes-and-invariants.md)
 - [030. Typestate and state transitions](part-06/030-typestate-and-transitions.md)
 
+# Part VII — Type Systems and Abstraction
+
+- [031. Generic functions, data, and parametric reasoning](part-07/031-generics-and-parametricity.md)
+- [032. Traits, associated items, and supertraits](part-07/032-traits-and-associated-items.md)
+- [033. Coherence, orphan rules, and blanket implementations](part-07/033-coherence-and-orphan-rules.md)
+- [034. Monomorphization, trait objects, and dispatch](part-07/034-dispatch-and-trait-objects.md)
+- [035. PhantomData, higher-ranked bounds, and GATs](part-07/035-markers-and-lending.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
@@ -60,3 +68,4 @@
 [Memory and computer architecture solutions](memory-solutions.md)
 [Ownership and borrowing solutions](ownership-solutions.md)
 [Data modeling solutions](data-modeling-solutions.md)
+[Type systems and abstraction solutions](abstraction-solutions.md)

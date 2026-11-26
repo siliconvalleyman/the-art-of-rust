@@ -21,3 +21,5 @@
   variance, and RAII with diagnostic fixtures and a tested permit pool.
 - Model records, alternatives, optional and fallible data, validated
   units, and checked workflow transitions in Part VI.
+- Teach generic contracts, traits, coherence, monomorphization, trait
+  objects, and lifetime-parameterized lending in Part VII.

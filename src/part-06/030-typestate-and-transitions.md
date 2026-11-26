@@ -154,4 +154,4 @@ permitted. Use a runtime boundary when the next state
 depends on external input.
 [Rust 1.75.0 Reference on implementations](https://doc.rust-lang.org/1.75.0/reference/items/implementations.html) · [NonZeroU64](https://doc.rust-lang.org/1.75.0/std/num/struct.NonZeroU64.html).
 
-[Newtypes and invariants](029-newtypes-and-invariants.md) · [Solutions](../data-modeling-solutions.md#chapter-030)
+[Newtypes and invariants](029-newtypes-and-invariants.md) · [Solutions](../data-modeling-solutions.md#chapter-030) · [Generics and parametricity](../part-07/031-generics-and-parametricity.md)
