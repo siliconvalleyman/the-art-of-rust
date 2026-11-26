@@ -215,4 +215,4 @@ loss is expected. Decide which overflow and special-value
 cases a numeric interface accepts, then test the cases
 that could be silently confused with valid results.
 
-[Names, mutation, primitive types, and expressions](012-names-and-expressions.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-013)
+[Names, mutation, primitive types, and expressions](012-names-and-expressions.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-013) · [Compound types, Unicode, and strings](014-types-and-text.md)

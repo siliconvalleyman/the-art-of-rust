@@ -389,6 +389,7 @@ def main() -> int:
                 "tests/fixtures/out_of_range_byte.rs": "overflowing_literals",
                 "tests/fixtures/macro_called_as_function.rs": "E0423",
                 "tests/fixtures/reassign_immutable.rs": "E0384",
+                "tests/fixtures/wrong_tail_type.rs": "E0308",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

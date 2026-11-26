@@ -25,6 +25,9 @@
 - [011. Rust history, rustup, rustc, Cargo, and the first program](part-03/011-first-program.md)
 - [012. Names, mutation, primitive types, and expressions](part-03/012-names-and-expressions.md)
 - [013. Numeric conversions, overflow, and floating point](part-03/013-numeric-conversions.md)
+- [014. Compound types, Unicode, and strings](part-03/014-types-and-text.md)
+- [015. Branches, loops, functions, and recursion](part-03/015-control-flow.md)
+- [Fundamentals midterm](fundamentals-midterm.md)
 
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)

@@ -2,29 +2,32 @@
 
 ## Current checkpoint
 
-- Phase: Rust Fundamentals continues at C014.
+- Phase: Memory and Computer Architecture begins at C016.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C013 are COMPLETE. C014–C125 are NOT_STARTED.
-- Practice: 65 exercise/solution pairs, 26 interview
-  question/answer pairs, and a separate scored Part II
-  assessment. The planned inventory has 560 exercises
-  and 224 interview questions remaining.
+- Chapters: C001–C015 are COMPLETE. C016–C125 remain to be published.
+- Practice: 75 exercise/solution pairs, 30 interview
+  question/answer pairs, a scored Part II assessment, and the
+  Fundamentals midterm. The planned inventory has 550 exercises
+  and 220 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
   predicates, equivalent guards, relation composition, induction,
   balanced recurrences, modular arithmetic, GCD, expectation, and
-  aggregate and potential-method bounds.
+  aggregate and potential-method bounds. Part III reviews covered
+  finite-width arithmetic, UTF-8 prefix maximality, and the
+  termination and correctness of iterative and recursive scans.
 - Projects: P01–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `b762796` (first Rust program). Locate the commit carrying this record with
+  `8cf7e84` (bindings and numeric representations).
+  Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: validate C014 on tuple, array, and UTF-8 representations
-  and C015 on branches, loops, functions, and recursive checks.
+- Next action: validate C016 on addresses, raw pointer values, and
+  stack frames, including its Windows x64 assembly capture.
 
 ## Validation evidence
 
@@ -35,7 +38,7 @@ Rust 1.75.0 on `x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python
 build, and the mdBook build and test commands. The byte-adder
 differential check covered all 65,536 input pairs. The literal
 fixtures verified the intended `overflowing_literals`, `E0423`,
-and `E0384` diagnostics. The first-program test checked stdout,
+`E0384`, and `E0308` diagnostics. The first-program test checked stdout,
 stderr, and exit status. Direct rustc and a standalone Cargo build
 both produced `Hello, Rust!`.
 The generated book passed the internal link and anchor check.

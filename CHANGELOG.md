@@ -12,3 +12,5 @@
   exact stdout and a compiler diagnostic on the pinned toolchain.
 - Teach bindings, scope, block results, numeric conversions, explicit
   overflow policies, and floating-point boundaries.
+- Finish Rust Fundamentals with compound data, UTF-8, control flow,
+  and a scored midterm covering Chapters 1–15.

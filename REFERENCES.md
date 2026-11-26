@@ -20,6 +20,8 @@
 - Microsoft. [About Processes and Threads](https://learn.microsoft.com/en-us/windows/win32/procthread/about-processes-and-threads), for process resources and thread context on Windows.
 - Microsoft. [Virtual Address Space](https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space), for Windows virtual address spaces.
 - J. Postel. [RFC 791, Internet Protocol](https://www.rfc-editor.org/rfc/rfc791), Appendix B, for data transmission order and multioctet number fields.
+- F. Yergeau. [RFC 3629, UTF-8](https://www.rfc-editor.org/rfc/rfc3629), for valid UTF-8 byte sequences.
+- Unicode Consortium. [Unicode Standard Annex #29, revision 43](https://www.unicode.org/reports/tr29/tr29-43.html), for text segmentation and grapheme boundaries.
 - A. M. Turing. [On Computable Numbers, with an Application to the Entscheidungsproblem](https://cs.stanford.edu/people/trevisan/cs172-07/turing36.pdf), proceedings volume 42, pp. 230–265, for a formal model of computation.
 
 ## Mathematical foundations
