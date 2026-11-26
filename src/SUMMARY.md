@@ -29,7 +29,16 @@
 - [015. Branches, loops, functions, and recursion](part-03/015-control-flow.md)
 - [Fundamentals midterm](fundamentals-midterm.md)
 
+# Part IV — Memory and Computer Architecture
+
+- [016. Addresses, pointer values, and stack frames](part-04/016-addresses-and-stack-frames.md)
+- [017. Stack, heap, static storage, and destruction](part-04/017-storage-and-destruction.md)
+- [018. Alignment, padding, endianness, and layout](part-04/018-alignment-and-layout.md)
+- [019. Hierarchy, allocation, fragmentation, and locality](part-04/019-allocation-and-locality.md)
+- [020. Address spaces, pages, and resource limits](part-04/020-address-spaces-and-pages.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
 [Rust fundamentals solutions](rust-fundamentals-solutions.md)
+[Memory and computer architecture solutions](memory-solutions.md)

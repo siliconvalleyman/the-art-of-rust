@@ -47,7 +47,7 @@ nonzero. Reversing the two expressions would change
 where the program can fail. Two predicates can have a
 commutative mathematical truth table while their order
 in a program still matters.
-[Rust Reference on lazy Boolean expressions](https://doc.rust-lang.org/reference/expressions/operator-expr.html#lazy-boolean-expressions).
+[Rust Reference on lazy Boolean operators](https://doc.rust-lang.org/1.75.0/reference/expressions/operator-expr.html#lazy-boolean-operators).
 
 ## Repeat with a purpose and an exit
 
@@ -224,4 +224,4 @@ work completed. A function names a contract. A
 recursive implementation needs a decreasing measure
 and a resource argument for the active calls.
 
-[Compound types, Unicode, and strings](014-types-and-text.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-015) · [Fundamentals midterm](../fundamentals-midterm.md)
+[Compound types, Unicode, and strings](014-types-and-text.md) · [Solutions](../rust-fundamentals-solutions.md#chapter-015) · [Fundamentals midterm](../fundamentals-midterm.md) · [Addresses, pointer values, and stack frames](../part-04/016-addresses-and-stack-frames.md)

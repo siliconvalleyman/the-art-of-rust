@@ -79,7 +79,7 @@ fallible access such as `get` can return absence and
 let the caller respond. For a bounded dataset, the
 type and index rule let the program identify the right
 element without scanning earlier positions.
-[Rust Reference on type layout](https://doc.rust-lang.org/reference/type-layout.html).
+[Rust Reference on type layout](https://doc.rust-lang.org/1.75.0/reference/type-layout.html).
 
 ## Unicode gives text numbers, and UTF-8 stores them
 
@@ -133,7 +133,7 @@ throughout the program. A `String` owns a growable
 UTF-8 buffer. Use one when building text from pieces
 or retaining it after the original source becomes
 unavailable.
-[Rust standard library documentation for str](https://doc.rust-lang.org/std/primitive.str.html) · [String](https://doc.rust-lang.org/std/string/struct.String.html).
+[Rust standard library documentation for str](https://doc.rust-lang.org/1.75.0/std/primitive.str.html) · [String](https://doc.rust-lang.org/1.75.0/std/string/struct.String.html).
 
 ```rust,edition2021
 let label = "Aé🦀";

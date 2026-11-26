@@ -14,3 +14,6 @@
   overflow policies, and floating-point boundaries.
 - Finish Rust Fundamentals with compound data, UTF-8, control flow,
   and a scored midterm covering Chapters 1–15.
+- Teach memory and computer architecture with captured Windows x64
+  assembly and layout, storage and drop order, first-fit allocation,
+  cache traces, and checked virtual address ranges.

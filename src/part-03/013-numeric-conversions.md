@@ -43,7 +43,7 @@ the signed value. A wider unsigned interpretation of the
 same original bits can have a different value. Conversion
 rules state what happens to the value, and a storage format
 states the byte order as a separate choice.
-[Rust Reference on numeric types](https://doc.rust-lang.org/reference/types/numeric.html).
+[Rust Reference on numeric types](https://doc.rust-lang.org/1.75.0/reference/types/numeric.html).
 
 ## Choose a conversion contract
 
@@ -65,7 +65,7 @@ application requires the low part. A wrapping sequence
 number can have that contract. A length used to validate
 whether input fits a field usually needs an explicit
 range check.
-[Rust Reference on numeric casts](https://doc.rust-lang.org/reference/expressions/operator-expr.html#type-cast-expressions).
+[Rust Reference on numeric casts](https://doc.rust-lang.org/1.75.0/reference/expressions/operator-expr.html#type-cast-expressions).
 
 ```rust,edition2021
 assert_eq!(u16::from(250_u8), 250);
@@ -96,7 +96,7 @@ an API should encode its chosen policy where correctness
 depends on the outcome. Rust also treats certain
 conditions separately, including zero divisors and
 signed minimum divided by −1.
-[Rust overflow rules](https://doc.rust-lang.org/reference/expressions/operator-expr.html#overflow) · [Cargo profiles](https://doc.rust-lang.org/cargo/reference/profiles.html).
+[Rust overflow rules](https://doc.rust-lang.org/1.75.0/reference/expressions/operator-expr.html#overflow) · [Cargo profiles](https://doc.rust-lang.org/1.75.0/cargo/reference/profiles.html).
 
 | Operation | Result for 250 and 20 as bytes | Suitable contract |
 | --- | --- | --- |
@@ -183,7 +183,7 @@ when that is the property you intend, and use
 both infinities and NaNs. The bit patterns of NaNs
 can vary. Sort or serialize a float only after
 specifying the treatment of special cases.
-[Rust standard library documentation for f64](https://doc.rust-lang.org/std/primitive.f64.html).
+[Rust standard library documentation for f64](https://doc.rust-lang.org/1.75.0/std/primitive.f64.html).
 
 ```rust,edition2021
 let invalid = f64::NAN;
@@ -201,7 +201,7 @@ contract requires an exact byte-valued measurement,
 check finiteness, range, and that the input has no
 fractional part before casting. Distinguish false
 acceptance from a legitimate zero measurement.
-[Rust Reference on type-cast expressions](https://doc.rust-lang.org/reference/expressions/operator-expr.html#type-cast-expressions).
+[Rust Reference on type-cast expressions](https://doc.rust-lang.org/1.75.0/reference/expressions/operator-expr.html#type-cast-expressions).
 
 ## Practice and assessment
 

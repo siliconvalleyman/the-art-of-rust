@@ -280,7 +280,7 @@ failures at the step that produced them. If the build
 fails, a previously built executable might still be
 present. Check the build result before using any output
 file as evidence for your latest edit.
-[Cargo new command reference](https://doc.rust-lang.org/cargo/commands/cargo-new.html).
+[Cargo new command reference](https://doc.rust-lang.org/1.75.0/cargo/commands/cargo-new.html).
 
 ## Read a compile-time failure
 

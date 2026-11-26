@@ -136,7 +136,7 @@ because the input is a nonnegative count still requires
 knowing its maximum. Using `usize` for an on-disk field
 would let the representation depend on which target you
 compile for unless you explicitly define a portable format.
-[Rust Reference on numeric types](https://doc.rust-lang.org/reference/types/numeric.html).
+[Rust Reference on numeric types](https://doc.rust-lang.org/1.75.0/reference/types/numeric.html).
 
 **Type inference** fills in types from constraints. A suffix
 or an annotation supplies a constraint directly. A later
@@ -201,7 +201,7 @@ result is discarded. The block then evaluates to unit.
 In this example `assert_eq!` needs a number and
 the compiler can report the disagreement. Reading the
 type of the block helps identify the earlier cause.
-[Rust Reference on block expressions](https://doc.rust-lang.org/reference/expressions/block-expr.html).
+[Rust Reference on block expressions](https://doc.rust-lang.org/1.75.0/reference/expressions/block-expr.html).
 
 The example assumes the occupied count is at most 120.
 If counts come from an external source, first prove or
