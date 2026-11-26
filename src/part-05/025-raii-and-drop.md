@@ -162,4 +162,4 @@ the resource invariant. Test ordinary and early
 control paths, report fallible finalization explicitly,
 and account for cleanup that can be skipped.
 
-[Variance, subtyping, and aliasing](024-variance-and-aliasing.md) · [Solutions](../ownership-solutions.md#chapter-025)
+[Variance, subtyping, and aliasing](024-variance-and-aliasing.md) · [Solutions](../ownership-solutions.md#chapter-025) · [Structs and products](../part-06/026-structs-and-products.md)

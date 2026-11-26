@@ -2,14 +2,14 @@
 
 ## Current checkpoint
 
-- Phase: Data Modeling begins at C026.
+- Phase: Type Systems and Abstraction begins at C031.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C025 are COMPLETE. C026–C125 are NOT_STARTED.
-- Practice: 125 exercise/solution pairs, 50 interview
+- Chapters: C001–C030 are COMPLETE. C031–C125 are NOT_STARTED.
+- Practice: 150 exercise/solution pairs, 60 interview
   question/answer pairs, a scored Part II assessment, and the
-  Fundamentals midterm. The planned inventory has 500 exercises
-  and 200 interview questions remaining.
+  Fundamentals midterm. The planned inventory has 475 exercises
+  and 190 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -22,27 +22,31 @@
   of first-fit search, cache residency, and covered-page bounds.
   Part V reviews covered ownership transfer, disjoint slice ranges,
   lifetime relationships, slot invariance, and RAII permit accounting.
+  Part VI reviews covered product cardinality, exhaustive case
+  analysis, scanner error precedence, and invariants for validated
+  weights and typed workflow transitions.
 - Projects: P01–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `44d13e0` (Memory and Computer Architecture).
+  `82095e3` (Ownership and Borrowing).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: start C026 on structs, product types, methods, and
-  associated functions. Derive a record from two independent fields,
-  compare named, tuple, and unit structs, and verify constructor and
-  receiver examples on Rust 1.75.0 before adding exercises and solutions.
+- Next action: finish and validate C031–C035, starting with generic
+  endpoint and pair operations. Check exact compiler diagnostics
+  for bounds, coherence, object safety, and overlapping loans.
 
 ## Validation evidence
 
 On November 26, 2026, the full repository validator passed with
 Rust 1.75.0 on `x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python
 3.13. It ran rustfmt, Cargo check, Clippy with warnings denied,
-27 Rust integration tests, one Rust documentation test, the release
+36 Rust integration tests, one Rust documentation test, the release
 build, and the mdBook build and test commands. The byte-adder
-differential check covered all 65,536 input pairs. Ten compiler
+differential check covered all 65,536 input pairs. The data-model
+tests exercised all 769 routes and all 1,000 three-digit strings.
+Thirteen compiler
 fixtures verified their intended diagnostic codes, including move,
 borrow, and lifetime errors. The first-program test checked stdout,
 stderr, and exit status. Direct rustc and a standalone Cargo build
@@ -65,4 +69,4 @@ terminology, traces, edge cases, resource limits, and navigation.
 GitHub Actions reported that its job could not start because the
 account is locked due to a billing issue. This blocks verification
 on the hosted Linux runner. Local validation remains passing.
-[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45756945894/job/139697681875).
+[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45759812358/job/139706911855).

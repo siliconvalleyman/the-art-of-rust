@@ -396,6 +396,9 @@ def main() -> int:
                 "tests/fixtures/ambiguous_output_lifetime.rs": "E0106",
                 "tests/fixtures/return_local_reference.rs": "E0515",
                 "tests/fixtures/invariant_slot.rs": "E0597",
+                "tests/fixtures/non_exhaustive_route.rs": "E0004",
+                "tests/fixtures/mixed_weight_units.rs": "E0308",
+                "tests/fixtures/ship_draft.rs": "E0599",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

@@ -45,9 +45,18 @@
 - [024. Variance, subtyping, and aliasing](part-05/024-variance-and-aliasing.md)
 - [025. RAII, Drop, and resource invariants](part-05/025-raii-and-drop.md)
 
+# Part VI — Data Modeling
+
+- [026. Structs, products, methods, and associated functions](part-06/026-structs-and-products.md)
+- [027. Enums, sums, destructuring, and exhaustive matches](part-06/027-enums-and-matching.md)
+- [028. Option, Result, and domain states](part-06/028-option-and-result.md)
+- [029. Newtypes and type-driven API design](part-06/029-newtypes-and-invariants.md)
+- [030. Typestate and state transitions](part-06/030-typestate-and-transitions.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
 [Rust fundamentals solutions](rust-fundamentals-solutions.md)
 [Memory and computer architecture solutions](memory-solutions.md)
 [Ownership and borrowing solutions](ownership-solutions.md)
+[Data modeling solutions](data-modeling-solutions.md)

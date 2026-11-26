@@ -19,3 +19,5 @@
   cache traces, and checked virtual address ranges.
 - Teach ownership transfer, Copy, Clone, disjoint borrowing, lifetimes,
   variance, and RAII with diagnostic fixtures and a tested permit pool.
+- Model records, alternatives, optional and fallible data, validated
+  units, and checked workflow transitions in Part VI.
