@@ -252,4 +252,4 @@ describe ways to implement program semantics. A formal machine
 model lets you reason about the memory needed for a class of
 inputs.
 
-[Previous: CPU architecture, memory, and assembly](004-architecture.md) · [Solutions](../foundations-solutions.md#chapter-005) · [Introduction](../introduction.md)
+[CPU architecture, memory, and assembly](004-architecture.md) · [Solutions](../foundations-solutions.md#chapter-005) · [Propositions, predicates, and proof](../part-02/006-propositions.md)

@@ -11,5 +11,15 @@
 - [004. CPU architecture, memory, and assembly](part-01/004-architecture.md)
 - [005. Operating systems, translation, and models of computation](part-01/005-operating-systems.md)
 
+# Part II — Mathematical Foundations
+
+- [006. Propositions, predicates, and proof](part-02/006-propositions.md)
+- [007. Sets, relations, functions, and graphs](part-02/007-sets-and-graphs.md)
+- [008. Induction, strong induction, and recurrence relations](part-02/008-induction.md)
+- [009. Counting, probability, and modular arithmetic](part-02/009-counting-and-probability.md)
+- [010. Asymptotic reasoning and cost models](part-02/010-asymptotic-work.md)
+- [Mathematical foundations practice assessment](mathematics-assessment.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
+[Mathematical foundations solutions](mathematics-solutions.md)

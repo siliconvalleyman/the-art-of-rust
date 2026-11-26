@@ -17,3 +17,8 @@
 - Microsoft. [Virtual Address Space](https://learn.microsoft.com/en-us/windows/win32/memory/virtual-address-space), for Windows virtual address spaces.
 - J. Postel. [RFC 791, Internet Protocol](https://www.rfc-editor.org/rfc/rfc791), Appendix B, for data transmission order and multioctet number fields.
 - A. M. Turing. [On Computable Numbers, with an Application to the Entscheidungsproblem](https://cs.stanford.edu/people/trevisan/cs172-07/turing36.pdf), proceedings volume 42, pp. 230–265, for a formal model of computation.
+
+## Mathematical foundations
+
+- Tom Leighton and Marten van Dijk. [Mathematics for Computer Science](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/), MIT 6.042J course materials, Fall 2010, for logic, proof techniques, graphs, counting, and probability.
+- Euclid. [Elements, Book VII, Proposition 2](https://mathcs.clarku.edu/~djoyce/java/elements/bookVII/propVII2.html), for the greatest common measure by successive reduction.
