@@ -1,0 +1,16 @@
+name: Content correction
+description: Report a technical, editorial, or teaching issue.
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Chapter ID and section
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Issue and supporting evidence
+      description: Include the toolchain and target for compiler behavior or a primary source for technical claims.
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: Validate book and Rust
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install book toolchain
+        run: |
+          rustup toolchain install 1.75.0 --profile minimal --component rustfmt,clippy
+          curl --fail --silent --show-error --location \
+            https://github.com/rust-lang/mdBook/releases/download/v0.4.36/mdbook-v0.4.36-x86_64-unknown-linux-gnu.tar.gz \
+            --output "$RUNNER_TEMP/mdbook.tar.gz"
+          mkdir "$RUNNER_TEMP/mdbook-bin"
+          tar -xzf "$RUNNER_TEMP/mdbook.tar.gz" -C "$RUNNER_TEMP/mdbook-bin" mdbook
+          echo "$RUNNER_TEMP/mdbook-bin" >> "$GITHUB_PATH"
+      - name: Run validation
+        run: python scripts/validate.py

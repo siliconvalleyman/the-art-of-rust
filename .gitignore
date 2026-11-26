@@ -1,0 +1,5 @@
+/book/
+/target/
+/.tools/
+__pycache__/
+*.pyc

@@ -1,0 +1,15 @@
+[book]
+authors = ["Zavqiddin Hasanov"]
+description = "From Zero to Professional. First Edition, 2023."
+language = "en"
+src = "src"
+title = "The Art of Rust"
+
+[build]
+create-missing = false
+
+[rust]
+edition = "2021"
+
+[output.html]
+mathjax-support = false
