@@ -61,6 +61,14 @@
 - [034. Monomorphization, trait objects, and dispatch](part-07/034-dispatch-and-trait-objects.md)
 - [035. PhantomData, higher-ranked bounds, and GATs](part-07/035-markers-and-lending.md)
 
+# Part VIII — Functional Programming
+
+- [036. Pure functions and composition](part-08/036-pure-functions-and-composition.md)
+- [037. Closures and capture](part-08/037-closures-and-capture.md)
+- [038. Iterator contracts and laziness](part-08/038-iterators-and-laziness.md)
+- [039. Map, filter, fold, reduce, and short-circuiting](part-08/039-adapters-and-reductions.md)
+- [040. Iterator API design and cost](part-08/040-iterator-api-design.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
@@ -69,3 +77,4 @@
 [Ownership and borrowing solutions](ownership-solutions.md)
 [Data modeling solutions](data-modeling-solutions.md)
 [Type systems and abstraction solutions](abstraction-solutions.md)
+[Functional programming solutions](functional-solutions.md)

@@ -4,6 +4,7 @@ members = [
     "examples/data-modeling",
     "examples/first-program",
     "examples/foundations",
+    "examples/functional",
     "mathematics",
 ]
 resolver = "2"

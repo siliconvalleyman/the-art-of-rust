@@ -19,5 +19,9 @@ name = "foundations"
 version = "0.1.0"
 
 [[package]]
+name = "functional"
+version = "0.1.0"
+
+[[package]]
 name = "mathematics"
 version = "0.1.0"

@@ -175,4 +175,4 @@ depend on a particular borrow, so an API can lend
 overlapping mutable views in succession.
 [Rust 1.75.0 Reference on generic associated types](https://doc.rust-lang.org/1.75.0/reference/items/associated-items.html#associated-types).
 
-[Dispatch and trait objects](034-dispatch-and-trait-objects.md) · [Solutions](../abstraction-solutions.md#chapter-035)
+[Dispatch and trait objects](034-dispatch-and-trait-objects.md) · [Solutions](../abstraction-solutions.md#chapter-035) · [Pure functions and composition](../part-08/036-pure-functions-and-composition.md)

@@ -404,6 +404,7 @@ def main() -> int:
                 "tests/fixtures/overlapping_summary.rs": "E0119",
                 "tests/fixtures/non_object_safe.rs": "E0038",
                 "tests/fixtures/overlapping_lent_windows.rs": "E0499",
+                "tests/fixtures/moved_closure_capture.rs": "E0382",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

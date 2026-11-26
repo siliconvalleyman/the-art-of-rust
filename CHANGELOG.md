@@ -23,3 +23,5 @@
   units, and checked workflow transitions in Part VI.
 - Teach generic contracts, traits, coherence, monomorphization, trait
   objects, and lifetime-parameterized lending in Part VII.
+- Separate computation from effects, then compare closures, lazy
+  iterators, fallible reduction, and bounded output in Part VIII.
