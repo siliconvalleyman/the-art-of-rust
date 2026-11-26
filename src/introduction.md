@@ -28,7 +28,7 @@ New programmers can begin with [How computers execute instructions](part-01/001-
 The first part uses bounded paper machines, tables, and pseudocode.
 At this stage, a trace is a table of state before and after each step.
 Rust implementations in the solutions are optional previews until
-the first Rust programming chapter.
+[the first Rust programming chapter](part-03/011-first-program.md).
 
 Experienced readers can try the Part I problems before revisiting
 explanations. If you can track the state but cannot explain why it must

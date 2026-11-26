@@ -2,10 +2,12 @@
 
 ## Rust and book tooling
 
+- Rust Project. [Announcing Rust 1.0](https://blog.rust-lang.org/2015/05/15/Rust-1.0/), May 15, 2015.
 - Rust Release Team. [Announcing Rust 1.75.0](https://blog.rust-lang.org/2023/12/28/Rust-1.75.0/), December 28, 2023.
 - Rust Project. [Rust 1.75.0 documentation index](https://doc.rust-lang.org/1.75.0/). For historical claims, prefer the pinned library, language, and Cargo documentation shipped with this toolchain.
 - Rust Project. [Rust source at the 1.75.0 tag](https://github.com/rust-lang/rust/tree/1.75.0). Source details describe that implementation.
 - mdBook Project. [mdBook 0.4.36](https://github.com/rust-lang/mdBook/releases/tag/v0.4.36).
+- Rustup Project. [Toolchain overrides](https://rust-lang.github.io/rustup/overrides.html).
 
 ## Computer science foundations
 

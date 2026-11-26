@@ -300,8 +300,7 @@ def run(*command: str) -> bool:
     return subprocess.run(command, cwd=ROOT).returncode == 0
 
 
-def check_byte_diagnostic() -> bool:
-    fixture = "tests/fixtures/out_of_range_byte.rs"
+def check_diagnostic(fixture: str, expected_code: str) -> bool:
     print(f"+ rustc diagnostic check for {fixture}", flush=True)
     with tempfile.TemporaryDirectory() as scratch:
         result = subprocess.run(
@@ -314,7 +313,7 @@ def check_byte_diagnostic() -> bool:
     ]
     return result.returncode != 0 and any(
         diagnostic.get("level") == "error"
-        and (diagnostic.get("code") or {}).get("code") == "overflowing_literals"
+        and (diagnostic.get("code") or {}).get("code") == expected_code
         for diagnostic in diagnostics
     )
 
@@ -386,8 +385,13 @@ def main() -> int:
                     errors.append(f"command failed: {' '.join(command)}")
                 elif command == ("mdbook", "build"):
                     errors.extend(check_rendered())
-            if not check_byte_diagnostic():
-                errors.append("rustc did not emit overflowing_literals for the out-of-range byte")
+            diagnostics = {
+                "tests/fixtures/out_of_range_byte.rs": "overflowing_literals",
+                "tests/fixtures/macro_called_as_function.rs": "E0423",
+            }
+            for fixture, code in diagnostics.items():
+                if not check_diagnostic(fixture, code):
+                    errors.append(f"{fixture}: rustc did not emit {code}")
     for error in errors:
         print(error, file=sys.stderr)
     if errors:

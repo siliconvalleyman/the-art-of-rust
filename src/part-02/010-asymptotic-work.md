@@ -219,4 +219,4 @@ growth class. An expected cost needs a distribution.
 An amortized bound follows from the operation sequence
 and can allow costly individual steps.
 
-[Counting, probability, and modular arithmetic](009-counting-and-probability.md) · [Solutions](../mathematics-solutions.md#chapter-010)
+[Counting, probability, and modular arithmetic](009-counting-and-probability.md) · [Solutions](../mathematics-solutions.md#chapter-010) · [The first Rust program](../part-03/011-first-program.md)

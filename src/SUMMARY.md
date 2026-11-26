@@ -20,6 +20,11 @@
 - [010. Asymptotic reasoning and cost models](part-02/010-asymptotic-work.md)
 - [Mathematical foundations practice assessment](mathematics-assessment.md)
 
+# Part III — Rust Fundamentals
+
+- [011. Rust history, rustup, rustc, Cargo, and the first program](part-03/011-first-program.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
+[Rust fundamentals solutions](rust-fundamentals-solutions.md)
