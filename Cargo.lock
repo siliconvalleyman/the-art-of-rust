@@ -7,6 +7,18 @@ name = "abstractions"
 version = "0.1.0"
 
 [[package]]
+name = "art-calc"
+version = "0.1.0"
+
+[[package]]
+name = "art-convert"
+version = "0.1.0"
+
+[[package]]
+name = "art-guess"
+version = "0.1.0"
+
+[[package]]
 name = "data-modeling"
 version = "0.1.0"
 

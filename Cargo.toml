@@ -7,5 +7,8 @@ members = [
     "examples/functional",
     "examples/reliability",
     "mathematics",
+    "projects/p01-calculator",
+    "projects/p02-guessing-game",
+    "projects/p03-unit-conversion",
 ]
 resolver = "2"

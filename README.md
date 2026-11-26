@@ -17,6 +17,11 @@ or [table of contents](src/SUMMARY.md). The [curriculum](CURRICULUM.md)
 lists prerequisites and planned evidence for all 25 parts. The
 [progress record](PROGRESS.md) records the material available today.
 
+The first three engineering projects build and test a
+[command-line calculator](src/projects/p01-calculator.md), a
+[number guessing game](src/projects/p02-guessing-game.md), and a
+[metric unit converter](src/projects/p03-unit-conversion.md).
+
 ## Build and verify locally
 
 Install [rustup](https://rustup.rs/) and ensure your host has a linker.

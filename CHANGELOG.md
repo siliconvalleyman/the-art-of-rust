@@ -28,3 +28,6 @@
 - Specify recovery, error precedence, source chains, panic boundaries,
   and atomic in-memory publication in Part IX, with a scored Core Rust
   midterm covering Chapters 16–45.
+- Implement and document the first three engineering projects, with
+  checked calculator arithmetic, a replayable bounded guessing game,
+  and exact metric conversions with an explicit rounding rule.

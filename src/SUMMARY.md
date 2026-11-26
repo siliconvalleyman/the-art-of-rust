@@ -78,6 +78,12 @@
 - [045. Robust APIs and defensive recovery](part-09/045-bounded-recovery.md)
 - [Core Rust midterm](core-rust-midterm.md)
 
+# Engineering projects
+
+- [P01. Command-line calculator](projects/p01-calculator.md)
+- [P02. Number guessing game](projects/p02-guessing-game.md)
+- [P03. Unit conversion utility](projects/p03-unit-conversion.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)

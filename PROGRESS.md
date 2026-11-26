@@ -2,9 +2,9 @@
 
 ## Current checkpoint
 
-- Phase: Error Handling and Reliability is published and its Rust
-  examples are validated. The full mdBook test command is blocked
-  on this Windows host. The first beginner projects are in progress.
+- Phase: Data Structures begins at C046. The first three engineering
+  projects are implemented and published with verified behavior.
+  Windows Application Control still blocks a full validation run.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
 - Chapters: C001–C040 are COMPLETE. C041–C045 are TESTING pending
@@ -37,23 +37,26 @@
   Part IX reviews covered recoverable failures, invariant preservation,
   explicit conversion, source-chain lifetimes, panic scope, and
   bounded transactional updates with deterministic error precedence.
-- Projects: P01–P03 are IMPLEMENTING. P04–P25 are NOT_STARTED.
+- Projects: P01–P03 are implemented, with 13 passing integration
+  tests and three passing guide examples. Their full workspace gate
+  remains TESTING. P04–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `af202e4` (Functional Programming).
+  `ab3aa16` (Error Handling and Reliability).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: register and validate P01–P03 with the workspace.
-  Resume the full mdBook test gate when a supported host can launch
-  its generated test programs. Begin C046 with an array and dynamic
-  array comparison and a growth-amortization derivation.
+- Next action: implement and verify C046's array and dynamic array
+  comparison, amortized growth proof, stack, and fixed-capacity queue.
+  Resume the full workspace and mdBook test gates on a host that can
+  launch the pinned tools and generated test programs.
 
 ## Validation evidence
 
 On November 26, 2026, validation used Rust 1.75.0 on
-`x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python 3.13. Rustfmt,
+`x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python 3.13. Before
+registering P01–P03, Rustfmt,
 Cargo check, Clippy with warnings denied, 62 Rust integration tests,
 one Rust documentation test, the release build, and the mdBook build
 passed. The full `mdbook test` command encountered linker launch
@@ -62,8 +65,7 @@ retries. All 20 executable Rust blocks in Part IX and its solutions
 passed in a single separately compiled Rust test harness, including
 the Core Rust midterm answers. The Chapter 039 accumulator example
 passed its individual doctest after specifying the fold seed type.
-The byte-adder
-differential check covered all 65,536 input pairs. The data-model
+The byte-adder differential check covered all 65,536 input pairs. The data-model
 tests exercised all 769 routes and all 1,000 three-digit strings.
 Part VIII checked each of 256 countdown starts and 7,680 combinations
 of sample readings, minimums, and result budgets. Part IX checked all
@@ -83,8 +85,17 @@ and referenced section anchors were checked before pinning citations.
 The Part VII assembly capture uses the same compiler and target at
 optimization level 2 and shows the specialized arithmetic and an
 indirect trait-object call. It does not report runtime performance.
-The Windows process sandbox prevented GCC from starting its bundled
-linker. The complete test run used the approved unsandboxed command.
+The Windows process sandbox initially prevented GCC from starting its
+bundled linker. The later run used the approved unsandboxed command.
+
+With P01–P03 registered, Rustfmt, Cargo check, the release build,
+the documentation inventory, the mdBook build, and rendered link
+checks passed. All 13 new integration tests passed in the release
+profile, including invocations of the three real executables. The
+three guide examples also passed in a separately compiled Rust test
+harness. Windows Application Control blocked Clippy and specific
+generated programs in the full Cargo and mdBook runs (OS error 4551).
+These launches remain unverified until a full run succeeds.
 
 The foundations examples use the standard library only. Assembly,
 cache, clock, scheduling, and address diagrams identify their model
