@@ -25,3 +25,6 @@
   objects, and lifetime-parameterized lending in Part VII.
 - Separate computation from effects, then compare closures, lazy
   iterators, fallible reduction, and bounded output in Part VIII.
+- Specify recovery, error precedence, source chains, panic boundaries,
+  and atomic in-memory publication in Part IX, with a scored Core Rust
+  midterm covering Chapters 16–45.

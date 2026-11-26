@@ -25,3 +25,7 @@ version = "0.1.0"
 [[package]]
 name = "mathematics"
 version = "0.1.0"
+
+[[package]]
+name = "reliability"
+version = "0.1.0"

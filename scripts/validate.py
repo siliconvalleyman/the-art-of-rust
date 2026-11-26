@@ -242,7 +242,7 @@ def check_publication(manifest: dict, includes: dict[Path, set[Path]], errors: l
             seen.update(ids)
     for stem in ("exercises", "solutions"):
         for path in (ROOT / stem).glob("C*.md"):
-            if path.stem not in published:
+            if path.stem.startswith("C") and path.stem not in published:
                 errors.append(f"{path.relative_to(ROOT)}: no matching chapter")
     return {"chapters": len(published), "exercises": len(exercises_seen), "questions": len(questions_seen)}
 
@@ -405,6 +405,8 @@ def main() -> int:
                 "tests/fixtures/non_object_safe.rs": "E0038",
                 "tests/fixtures/overlapping_lent_windows.rs": "E0499",
                 "tests/fixtures/moved_closure_capture.rs": "E0382",
+                "tests/fixtures/question_mark_without_conversion.rs": "E0277",
+                "tests/fixtures/unwind_unsafe_capture.rs": "E0277",
             }
             for fixture, code in diagnostics.items():
                 if not check_diagnostic(fixture, code):

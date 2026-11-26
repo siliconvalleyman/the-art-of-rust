@@ -2,14 +2,17 @@
 
 ## Current checkpoint
 
-- Phase: Error Handling and Reliability begins at C041.
+- Phase: Error Handling and Reliability is published and its Rust
+  examples are validated. The full mdBook test command is blocked
+  on this Windows host. The first beginner projects are in progress.
 - Curriculum: 25 parts, 125 chapter specifications, and 25 project
   specifications. See [CURRICULUM.md](CURRICULUM.md).
-- Chapters: C001–C040 are COMPLETE. C041–C125 are NOT_STARTED.
-- Practice: 200 exercise/solution pairs, 80 interview
-  question/answer pairs, a scored Part II assessment, and the
-  Fundamentals midterm. The planned inventory has 425 exercises
-  and 170 interview questions remaining.
+- Chapters: C001–C040 are COMPLETE. C041–C045 are TESTING pending
+  the full mdBook test gate. C046–C125 are NOT_STARTED.
+- Practice: 225 exercise/solution pairs, 90 interview question/answer
+  pairs, a scored Part II assessment, the Fundamentals midterm, and
+  the Core Rust midterm. The planned inventory has 400 exercises
+  and 160 interview questions remaining.
 - Correctness: reviewed the byte-column invariant, gate composition,
   machine instruction bound, cache state and miss arguments, parity
   invariant, and bounded nesting. Part II reviews covered quantified
@@ -31,35 +34,44 @@
   Part VIII reviews covered rounding and effect boundaries, closure
   capture, iterator exhaustion, callback order, early failure, and
   bounded demand compared against an eager reference.
-- Projects: P01–P25 are NOT_STARTED.
+  Part IX reviews covered recoverable failures, invariant preservation,
+  explicit conversion, source-chain lifetimes, panic scope, and
+  bounded transactional updates with deterministic error precedence.
+- Projects: P01–P03 are IMPLEMENTING. P04–P25 are NOT_STARTED.
 - Licensing: selection of a repository license awaits the owner's
   authorization.
 - Previous checkpoint committed and verified on remote `main`:
-  `a07c1ae` (Type Systems and Abstraction).
+  `af202e4` (Functional Programming).
   Locate the commit carrying this record with
   `git log -1 -- PROGRESS.md`. Compare it with
   `git ls-remote origin refs/heads/main` to verify publication.
-- Next action: finish and validate C041–C045. Begin by distinguishing
-  recoverable failure, absence, and violated invariants with a checked
-  stock update, then verify conversion, source chains, panic behavior,
-  and an all-or-nothing batch.
+- Next action: register and validate P01–P03 with the workspace.
+  Resume the full mdBook test gate when a supported host can launch
+  its generated test programs. Begin C046 with an array and dynamic
+  array comparison and a growth-amortization derivation.
 
 ## Validation evidence
 
 On November 26, 2026, validation used Rust 1.75.0 on
-`x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python 3.13. The
-Chapter 039 accumulator example passed its individual doctest after
-adding an explicit type to the fold seed. The full run passed the
-other checks, including rustfmt, Cargo check, Clippy with warnings denied,
-54 Rust integration tests, one Rust documentation test, the release
-build, and the mdBook build and test commands. The byte-adder
+`x86_64-pc-windows-gnu`, mdBook 0.4.36, and Python 3.13. Rustfmt,
+Cargo check, Clippy with warnings denied, 62 Rust integration tests,
+one Rust documentation test, the release build, and the mdBook build
+passed. The full `mdbook test` command encountered linker launch
+failures and later Windows Application Control blocks during targeted
+retries. All 20 executable Rust blocks in Part IX and its solutions
+passed in a single separately compiled Rust test harness, including
+the Core Rust midterm answers. The Chapter 039 accumulator example
+passed its individual doctest after specifying the fold seed type.
+The byte-adder
 differential check covered all 65,536 input pairs. The data-model
 tests exercised all 769 routes and all 1,000 three-digit strings.
 Part VIII checked each of 256 countdown starts and 7,680 combinations
-of sample readings, minimums, and result budgets. Nineteen compiler
+of sample readings, minimums, and result budgets. Part IX checked all
+65,536 initial-stock and single-request combinations. Twenty-one compiler
 fixtures verified their intended diagnostics, including trait bounds,
-coherence, object safety, overlapping mutable loans, and closure
-capture moves. The first-program test checked stdout,
+coherence, object safety, overlapping mutable loans, closure capture
+moves, missing error conversion, and unwind-unsafe captures.
+The first-program test checked stdout,
 stderr, and exit status. Direct rustc and a standalone Cargo build
 both produced `Hello, Rust!`.
 The generated book passed the internal link and anchor check.
@@ -82,5 +94,5 @@ terminology, traces, edge cases, resource limits, and navigation.
 
 GitHub Actions reported that its job could not start because the
 account is locked due to a billing issue. This blocks verification
-on the hosted Linux runner. Local validation remains passing.
-[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45766633020/job/139728983467).
+on the hosted Linux runner.
+[Hosted workflow annotation](https://github.com/siliconvalleyman/the-art-of-rust/actions/runs/45771354546/job/139744484715).

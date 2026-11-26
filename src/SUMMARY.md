@@ -69,6 +69,15 @@
 - [039. Map, filter, fold, reduce, and short-circuiting](part-08/039-adapters-and-reductions.md)
 - [040. Iterator API design and cost](part-08/040-iterator-api-design.md)
 
+# Part IX — Error Handling and Reliability
+
+- [041. Recoverable failures, invariants, and assertions](part-09/041-failures-and-invariants.md)
+- [042. Propagation, question mark, and error conversion](part-09/042-propagation-and-conversion.md)
+- [043. Custom errors, source chains, and context](part-09/043-context-and-sources.md)
+- [044. Panic, unwinding, and recovery boundaries](part-09/044-panic-boundaries.md)
+- [045. Robust APIs and defensive recovery](part-09/045-bounded-recovery.md)
+- [Core Rust midterm](core-rust-midterm.md)
+
 [Computer science foundations solutions](foundations-solutions.md)
 [Computer science foundations reference](foundations-reference.md)
 [Mathematical foundations solutions](mathematics-solutions.md)
@@ -78,3 +87,4 @@
 [Data modeling solutions](data-modeling-solutions.md)
 [Type systems and abstraction solutions](abstraction-solutions.md)
 [Functional programming solutions](functional-solutions.md)
+[Error handling and reliability solutions](reliability-solutions.md)

@@ -115,4 +115,4 @@ the input traversed and the demand; test semantics and
 measure costs separately.
 [Rust 1.75.0 Reference on impl Trait](https://doc.rust-lang.org/1.75.0/reference/types/impl-trait.html).
 
-[Adapters and reductions](039-adapters-and-reductions.md) · [Solutions](../functional-solutions.md#chapter-040)
+[Adapters and reductions](039-adapters-and-reductions.md) · [Failures and invariants](../part-09/041-failures-and-invariants.md) · [Solutions](../functional-solutions.md#chapter-040)
